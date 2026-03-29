@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aayush Gupta | MERN Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Particle canvas background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- =================== NAVBAR =================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AG<span class="logo-bracket"
+          >/&gt;</span
+        >
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="/images/Resume.pdf" download>
+        <i class="fas fa-download"></i> Resume
+      </a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- =================== HERO =================== -->
+    <section class="hero" id="home">
+      <div class="hero-grid-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-tag reveal">
+          <span class="dot"></span> Open to Opportunities
+        </div>
+
+        <h1 class="hero-name reveal">
+          <span class="line1">Aayush</span>
+          <span class="line2">Gupta</span>
+        </h1>
+
+        <div class="hero-role reveal">
+          <span class="role-prefix">// </span>
+          <span id="typed-text"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+
+        <p class="hero-desc reveal">
+          MERN Stack Developer crafting high-performance web apps.<br />
+          Turning ideas into reality — one commit at a time.
+        </p>
+
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Hire Me</span>
+          </a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat-box">
+            <span class="stat-number" data-target="32">0</span>
+            <span class="stat-label">Repositories</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="9" data-decimal="true"
+              >0</span
+            >
+            <span class="stat-label">CGPA (BSC IT)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-3d-card">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <div class="avatar-ring">
+                <div class="avatar-circle">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="ring ring1"></div>
+                <div class="ring ring2"></div>
+                <div class="ring ring3"></div>
+              </div>
+              <div class="floating-icons">
+                <div class="fi fi-react" style="--delay: 0s">⚛️</div>
+                <div class="fi fi-node" style="--delay: 0.5s">🟢</div>
+                <div class="fi fi-mongo" style="--delay: 1s">🍃</div>
+                <div class="fi fi-js" style="--delay: 1.5s">🟡</div>
+                <div class="fi fi-mysql" style="--delay: 2s">🐬</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+    <section class="about" id="about">
+      <div class="section-header reveal">
+        <span class="section-number">01.</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hey! I'm <strong>Aayush Gupta</strong>, a passionate MERN Stack
+            Developer from <strong>Bhiwandi, Maharashtra</strong>. I'm currently
+            in my final semester of <strong>BSC IT from B.N.N. College</strong>,
+            graduating in April 2025.
+          </p>
+
+          <p>
+            I love building real-world applications that solve actual problems.
+            From expense trackers to medical management systems — I focus on
+            clean code, great UX, and scalable architecture.
+          </p>
+
+          <p>
+            I completed a
+            <strong>Customer Care Associate Apprenticeship</strong> at Eureka
+            Outsourcing Solutions Pvt. Ltd., which sharpened my professional
+            communication and discipline.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <strong>B.N.N. College, Bhiwandi</strong>
+                <span>BSC IT — CGPA: 9.0 (Ongoing)</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-school"></i>
+              <div>
+                <strong>B.N.N. College, Bhiwandi</strong>
+                <span>12th — 55%</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-book"></i>
+              <div>
+                <strong>B.V.N Hindi High School</strong>
+                <span>10th — 86.20%</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Bhiwandi, Thane, Maharashtra</strong>
+                <span>421305</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="card-3d" id="tilt-card">
+            <div class="card-glow"></div>
+            <div class="profile-initial">AG</div>
+            <div class="card-info">
+              <div class="info-row">
+                <span class="info-label">Name</span>
+                <span class="info-value">Aayush Gupta</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Role</span>
+                <span class="info-value">MERN Developer</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Available</span>
+                <span class="info-value status-green">● Yes</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Location</span>
+                <span class="info-value">Bhiwandi, MH</span>
+              </div>
+            </div>
+            <a href="/images/Resume.pdf" download class="download-btn">
+              <i class="fas fa-download"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== SKILLS =================== -->
+    <section class="skills" id="skills">
+      <div class="section-header reveal">
+        <span class="section-number">02.</span>
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category reveal">
+          <h3 class="cat-title"><span class="cat-icon">🖥️</span> Frontend</h3>
+          <div class="skill-pills">
+            <div class="skill-pill" style="--clr: #e34f26">
+              <i class="fab fa-html5"></i> HTML5
+            </div>
+            <div class="skill-pill" style="--clr: #1572b6">
+              <i class="fab fa-css3-alt"></i> CSS3
+            </div>
+            <div class="skill-pill" style="--clr: #f7df1e">
+              <i class="fab fa-js"></i> JavaScript
+            </div>
+            <div class="skill-pill" style="--clr: #61dafb">
+              <i class="fab fa-react"></i> React
+            </div>
+            <div class="skill-pill" style="--clr: #38bdf8">🌊 Tailwind CSS</div>
+          </div>
+          <div class="skill-pill bootstrap-pill" style="--clr: #7952b3">
+            <i class="fab fa-bootstrap"></i> Bootstrap
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal">
+          <h3 class="cat-title"><span class="cat-icon">⚙️</span> Backend</h3>
+          <div class="skill-pills">
+            <div class="skill-pill" style="--clr: #68a063">
+              <i class="fab fa-node-js"></i> Node.js
+            </div>
+            <div class="skill-pill" style="--clr: #000">🚂 Express.js</div>
+            <div class="skill-pill" style="--clr: #4479a1">🐬 MySQL</div>
+            <div class="skill-pill" style="--clr: #47a248">🍃 MongoDB</div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal">
+          <h3 class="cat-title">
+            <span class="cat-icon">🛠️</span> Tools & APIs
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill" style="--clr: #f05032">
+              <i class="fab fa-git-alt"></i> Git
+            </div>
+            <div class="skill-pill" style="--clr: #333">
+              <i class="fab fa-github"></i> GitHub
+            </div>
+            <div class="skill-pill" style="--clr: #007acc">🔵 VS Code</div>
+            <div class="skill-pill" style="--clr: #ff6c37">📮 Postman</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Bars -->
+      <div class="skill-bars reveal">
+        <div class="bar-item">
+          <div class="bar-header">
+            <span>JavaScript</span><span class="bar-pct">85%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="85" style="--clr: #f7df1e"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-header">
+            <span>React.js</span><span class="bar-pct">80%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="80" style="--clr: #61dafb"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-header">
+            <span>Node.js / Express</span><span class="bar-pct">78%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="78" style="--clr: #68a063"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-header">
+            <span>MySQL</span><span class="bar-pct">75%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="75" style="--clr: #4479a1"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-header">
+            <span>MongoDB</span><span class="bar-pct">72%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="72" style="--clr: #47a248"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-header">
+            <span>HTML & CSS</span><span class="bar-pct">90%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="90" style="--clr: #e34f26"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PROJECTS =================== -->
+    <section class="projects" id="projects">
+      <div class="section-header reveal">
+        <span class="section-number">03.</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal" style="--accent: #00d4ff">
+          <div class="project-header">
+            <div class="proj-icon">💰</div>
+            <div class="project-links">
+              <a
+                href="https://expense-tracking-systemm.netlify.app/"
+                target="_blank"
+                title="Live Demo"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                href="https://github.com/aayushgupta-4341/Expense-Tracker"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Expense Tracker App</h3>
+          <p class="project-desc">
+            A clean, responsive expense management app. Add & delete
+            transactions, view live balance, and track spending with an
+            intuitive UI. Deployed live on Netlify.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" style="--accent: #00ff88">
+          <div class="project-header">
+            <div class="proj-icon">💊</div>
+            <div class="project-links">
+              <a
+                href="https://github.com/aayushgupta-4341/MINOR-INDUSTRY-PROJECT"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">MediTech — Medical Stock Manager</h3>
+          <p class="project-desc">
+            Smart medicine inventory system with expiry date tracking, automated
+            alerts before expiry, and NGO redistribution support for unused
+            medicines. Solving a real healthcare problem.
+          </p>
+          <div class="project-tags">
+            <span>MERN</span><span>Node.js</span><span>MongoDB</span
+            ><span>MySQL</span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" style="--accent: #ff6b6b">
+          <div class="project-header">
+            <div class="proj-icon">🌤️</div>
+            <div class="project-links">
+              <a
+                href="https://github.com/aayushgupta-4341/Weather-App"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">
+            Real-time weather application using OpenWeatherMap API. Search any
+            city worldwide and get temperature, humidity, and weather conditions
+            with a beautiful responsive UI.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>REST API</span><span>CSS</span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" style="--accent: #ff9900">
+          <div class="project-header">
+            <div class="proj-icon">📝</div>
+            <div class="project-links">
+              <a
+                href="https://github.com/aayushgupta-4341/Form-Validation-Regitration-Login-Pages"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Form Validation System</h3>
+          <p class="project-desc">
+            Complete Registration & Login pages with robust client-side form
+            validation, real-time error feedback, and clean UX patterns — a
+            foundation for full-stack auth systems.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal" style="--accent: #c678dd">
+          <div class="project-header">
+            <div class="proj-icon">🎨</div>
+            <div class="project-links">
+              <a
+                href="https://github.com/aayushgupta-4341/Random-color-generator"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Random Color Generator</h3>
+          <p class="project-desc">
+            Interactive color palette tool that generates random HEX colors with
+            one-click copy functionality. Great for designers needing quick
+            color inspiration.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>CSS</span><span>DOM APIs</span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div
+          class="project-card project-card--wip reveal"
+          style="--accent: #ffd700"
+        >
+          <div class="wip-badge">🚧 In Development</div>
+          <div class="project-header">
+            <div class="proj-icon">🔢</div>
+            <div class="project-links">
+              <a
+                href="https://github.com/aayushgupta-4341/counter-app"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">Counter App</h3>
+          <p class="project-desc">
+            Interactive counter application built with CSS — a clean UI/CSS
+            challenge focusing on animations and dynamic state display.
+          </p>
+          <div class="project-tags">
+            <span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+      </div>
+
+      <div class="github-cta reveal">
+        <a
+          href="https://github.com/aayushgupta-4341"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="fab fa-github"></i>
+          View All 32 Repos on GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- =================== EXPERIENCE =================== -->
+    <section class="experience" id="experience">
+      <div class="section-header reveal">
+        <span class="section-number">04.</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-connector"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Apprentice — Customer Care Associate</h3>
+                <span class="tl-company"
+                  >Eureka Outsourcing Solutions Pvt. Ltd.</span
+                >
+              </div>
+              <span class="tl-date">Mar 2025 – Jun 2025</span>
+            </div>
+            <ul class="tl-points">
+              <li>
+                Successfully completed Call Center Assistant training program
+              </li>
+              <li>
+                Demonstrated diligence, perseverance, and strong discipline
+                towards work
+              </li>
+              <li>
+                Enhanced professional communication and problem-resolution
+                skills
+              </li>
+              <li>Recognized for sincerity and dedication during tenure</li>
+            </ul>
+            <div class="tl-cert">
+              📄 Certified by VP — Human Resource & Compliance
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-connector"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">BSC IT — Final Year Student</h3>
+                <span class="tl-company">B.N.N. College, Bhiwandi</span>
+              </div>
+              <span class="tl-date">2022 – Apr 2025</span>
+            </div>
+            <ul class="tl-points">
+              <li>Maintaining excellent CGPA of 9.0 throughout the program</li>
+              <li>Actively building MERN stack projects alongside academics</li>
+              <li>Final examination scheduled April 21, 2025</li>
+            </ul>
+            <div class="tl-cert">🎓 Expected Graduation: April 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CONTACT =================== -->
+    <section class="contact" id="contact">
+      <div class="section-header reveal">
+        <span class="section-number">05.</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <h3 class="contact-heading">Let's Build Something Great Together</h3>
+          <p class="contact-sub">
+            I'm currently open to internships, freelance projects, and full-time
+            opportunities. Drop a message and I'll respond ASAP!
+          </p>
+
+          <div class="contact-links">
+            <a href="tel:+919022053701" class="contact-link">
+              <div class="cl-icon" style="--clr: #00ff88">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <span class="cl-label">Phone</span>
+                <span class="cl-value">+91 9022053701</span>
+              </div>
+            </a>
+
+            <a href="mailto:ayushgupta69904@gmail.com" class="contact-link">
+              <div class="cl-icon" style="--clr: #ff6b6b">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span class="cl-label">Email</span>
+                <span class="cl-value">ayushgupta69904@gmail.com</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/aayush-gupta4341/"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="cl-icon" style="--clr: #0077b5">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">aayush-gupta4341</span>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/aayushgupta-4341"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="cl-icon" style="--clr: #fff">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <span class="cl-label">GitHub</span>
+                <span class="cl-value">aayushgupta-4341</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/aayu_01x"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="cl-icon" style="--clr: #e1306c">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div>
+                <span class="cl-label">Instagram</span>
+                <span class="cl-value">@aayu_01x</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <input type="text" id="f-name" placeholder=" " />
+              <label for="f-name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="f-email" placeholder=" " />
+              <label for="f-email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="f-msg" rows="4" placeholder=" "></textarea>
+              <label for="f-msg">Your Message</label>
+            </div>
+            <button
+              class="btn btn-primary full-width"
+              id="send-btn"
+              onclick="handleFormSubmit()"
+            >
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+            <div id="form-success" class="form-success" style="display: none">
+              ✅ Message noted! I'll get back to you soon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>AG<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </div>
+        <p class="footer-tagline">
+          Crafted with ❤️ by Aayush Gupta • MERN Stack Developer
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/aayushgupta-4341" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aayush-gupta4341/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/aayu_01x" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="mailto:ayushgupta69904@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+919022053701"><i class="fas fa-phone"></i></a>
+        </div>
+        <p class="footer-copy">© 2026 Aayush Gupta. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
